@@ -1,21 +1,53 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "PlatformIO",
             "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/**",
-                "/usr/avr/include/**"
+                "c:/Devel/Git/fddEMU/src",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
             ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "c:/Devel/Git/fddEMU/src",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/spam/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
             "defines": [
-                "__AVR_ATmega32U4__"
+                "PLATFORMIO=60115",
+                "ARDUINO_AVR_NANO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
             ],
-            "compilerPath": "/usr/bin/avr-g++",
-            "cStandard": "gnu17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64",
-            "compilerArgs": [],
-            "configurationProvider": "ms-vscode.makefile-tools"
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/spam/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
         }
     ],
     "version": 4
