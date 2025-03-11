@@ -1,4 +1,6 @@
+/** Button test for FDD EMU
 
+*/
 
 #define ANALOG_PIN A7
 #define BOUD 115200
