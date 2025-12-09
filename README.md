@@ -1,3 +1,6 @@
+Seeing that I am still receiving issues and questions about whether this will run on compatible microcontrollers such as LGT8F328P I felt the need for an explanation. At the time of me writing this fddEMU, Arduino nano (atmega328p) was one of the cheapest and widely available microcontrollers. I wanted something every electronics hobbyist && retro enthusiast can easily build and use. But the advent of raspberry pi pico (RP2040) -a very capable microcontroller both widely available and cheap- made this meaningless. Now fddEMU stays here as a curiosity.
+
+
 # fddEMU
 An AVR (atmega328p) based floppy drive emulator for PC
 <br>
@@ -194,6 +197,7 @@ After a drive is selected:<br>
 * To test fddEMU or any other floppy drive emulator a Floppy Drive Controller (FDC) is very useful. Unfortunately new computers usually don't come with a FDC. Thankfully we already have a very good FDC that generates the precise debug information we need: the [ArduinoFDC](https://github.com/dhansel/ArduinoFDC). A direct pin to pin connection from fddEMU to ArduinoFDC works, if using shorter jumper wires external pullups are not necessary.
 * If using a floppy drive ribbon cable make sure of external pullup resistors to +5V on Step (Pin 20 on floppy connector) and WriteData (pin 22 on floppy connector) pins.
 * If WiteData pin (pin 22 on floppy connector) is disconnected or does not have sufficient external pullup fddEMU might hang up while reading data from host, which might cause a static image on screen. To protect the screen currently a watchdog timer of 8 seconds is set (which is the longest duration for watchdog timer). If mcu (arduino) can't access SD card after reset remove the sd card, wait a few seconds, reinsert the SD card then reset the arduino.
+* If buttons doesnt work correctly check voltage levels on A7 for each button, you might neeed to modify voltage input values in code accordingly.
 
 **Acknowledgements**
 <br>
